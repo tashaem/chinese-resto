@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Restoo</title>
+	<link rel="icon" href="dimsum.png">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	
+
+	
+	<script type="text/javascript">
+
+		function secondAlert(){
+			alert("Enjoy your meal!");
+			document.querySelector("h1").innerHTML = "Browse<br> Our Wide <br>Selection";
+		};
+
+		function changeImg(){
+			
+			document.querySelector("#homepageBanner").src = "banner2.jpg"
+		};
+		
+
+	</script>
+
+
+
+</head>
+<body>
+	<div>
+		<img id="homepageBanner" src="dumplingBanner.jpg" onclick="changeImg()">
+		<img id="logo" src="dimsum.png">
+		<h1>Authentic<br>Chinese<br>Cuisine</h1>
+		<h2 id="button" onclick="secondAlert();">See our specials</h2>
+	</div>
+
+
+	<h2>Today's Menu</h2>
+	<div id="cardDiv">
+		<div>
+			<a href="#">
+				<img class="cardImgs" src="pork.jpg" >
+				<p>
+					<b>Beef sauteed in Sweet Sauce</b>
+					<br>Seasoned with garlic and chilli
+					<br> <b>HKD$70</b> / + $3 for drinks
+				</p>
+			</a>
+		</div>
+		<div>
+			<a href="#">
+				<img class="cardImgs" src="bakpao.jpg">
+				<p>
+					<b>Pork Bak Pao</b>
+					<br>Minced pork and chives
+					<br><b>HKD$40 / + $3 for drinks</b>
+				</p>
+			</a>
+		</div>
+	</div>
+
+
+	<a href="drinks.html">	
+	<h2>Click here to see our drinks selection!</h2>
+	</a>
+
+	<!--
+	<div>
+		<div>
+			<ul>
+				<li>Bubble Milk Tea</li>
+				<li>Soy Milk</li>
+				<li>Coffee with Milk</li>
+			</ul>
+		</div>
+		<div>
+			<ol>
+				<li>Hot Chocolate</li>
+				<li>Earl Grey Tea</li>
+				<li>Ginger Lemon Honey</li>
+			</ol>
+		</div>
+		<div>
+			<ol>
+				<li>Iced Black</li>
+				<li>Iced Mocha</li>
+				<li>Iced latte</li>
+			</ol>
+		</div>
+	</div>
+	-->
+
+</body>
+</html>

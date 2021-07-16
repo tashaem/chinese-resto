@@ -1,0 +1,103 @@
+#homepageBanner{
+	width: 100%;
+	position: relative;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif; 
+	text-align: center;
+}
+
+h1 {
+	font-size:  300%;
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	text-align: left;
+}
+
+#logo {
+	width: 5%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+#button {
+	position: absolute;
+	top: 75%;
+	left: 5%;
+	background-color: #fff;
+	color: #706565;
+	padding: 1%	;
+	border-radius: 100px;
+	box-shadow: 0.1em 0.1em 0.3em dark gray;
+}
+
+.cardImgs {
+	height: 330px;
+	width: 495px;
+	object-fit: cover;
+	border-radius: 20px;
+	box-shadow: 0.1em 0.3em 0.3em #C1C1C1;
+}
+
+p {
+	font-size: 150%;
+	color: black;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+#cardDiv {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+h2 {
+	padding: 20px 100px;
+}
+
+@media print {
+	h1 {
+		display: none;
+	}
+	#button {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 900px){
+	body {
+		background-color: #f6e1dc;
+	}
+	h1 {
+		top: 30%;
+	}
+	#button {
+		top: 60%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	body {
+		background-color: #c2d5da;
+	}
+	h1 {
+		display: none;
+	}
+	#button {
+		top: 5%;
+		right: 5%;
+	}
+}
